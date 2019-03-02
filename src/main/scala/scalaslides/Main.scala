@@ -1,3 +1,5 @@
+package scalaslides
+
 object Main {
   def main(args: Array[String]): Unit = {
     println("hej")
