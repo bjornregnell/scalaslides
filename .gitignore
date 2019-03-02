@@ -1,14 +1,17 @@
+# general
 tmp
 **/old
 **/bin
 
-**/*.class  # Java / Scala
-**/target   # sbt
-target/     # sbt
+# Scala + sbt
+**/*.class
+**/target
+target/
 
-*.swp       # vim
-*~          # emacs
-.idea       # IntelliJ
+# Editors
+*.swp
+*~
+.idea
 
 # Latex
 **/*.aux
