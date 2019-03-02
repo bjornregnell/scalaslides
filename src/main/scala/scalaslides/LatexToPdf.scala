@@ -1,8 +1,6 @@
 package scalaslides
 
 object LatexToPdf {  // assumed commands on path: pdflatex, tail
-  import scala.sys.process.Process
-
   def apply(texFile: String, workDir: String = "tex"): Unit = {
     val basePath = new java.io.File( "." ).getCanonicalPath()
     val workPath = s"$basePath/$workDir"
@@ -23,7 +21,7 @@ object LatexToPdf {  // assumed commands on path: pdflatex, tail
         Seq("tail", "-40", logPath),
         new java.io.File(workDir)
       ).run
-      sys.error(s"\n*** ERROR: pdflatex output in: $logPath")
+      scala.sys.error(s"\n*** ERROR: pdflatex output in: $logPath")
     } else println(s"             Log file: $workDir/$logFile")
   }
 }
