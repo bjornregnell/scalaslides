@@ -4,6 +4,8 @@ tmp
 
 **/*.class  # Java / Scala
 **/target   # sbt
+target      # sbt
+
 *.swp       # vim
 *~          # emacs
 .idea       # IntelliJ
